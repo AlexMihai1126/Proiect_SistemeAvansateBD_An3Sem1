@@ -1,3 +1,12 @@
+CREATE TABLE masina (
+    vin VARCHAR2(50) PRIMARY KEY,
+    brand VARCHAR2(50),
+    model VARCHAR2(50),
+    tip_caroserie VARCHAR2(50),
+    an_fabricatie NUMBER,
+    km NUMBER
+);
+
 CREATE INDEX idx_masina_vin
 ON masina(vin);
 
